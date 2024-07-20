@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>🎂</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="cake_style.css" />
+    <link rel="stylesheet" href="fireworks_style.css" />
+
+    <style>
+      body {
+        font-size: 18px;
+        font-family: "courier"; /*"Lucida Console", Courier, monospace;*/
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat, repeat;
+        background-color: #cccccc;
+        background-size: cover;
+
+        background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #cccccc;
+            color: white;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        color: white;
+      }
+
+      button {
+        font-size: 18px;
+        font-family: "courier";
+        color: white;
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .myButton {
+        /*box-shadow: 0px 0px 0px 0px #3dc21b;
+        background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+        background-color: #44c767;*/
+        background:    #fff533;
+        background:    linear-gradient(#fff533, #f3c220);
+        border:        1px solid #ffffff;
+        border-radius: 50px;
+        border: 6px solid #ffffff;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 49px;
+        font-weight: bold;
+        padding: 45px 45px;
+        text-decoration: none;
+      }
+      .myButton:hover {
+        background:linear-gradient(to top, #f2cd13 5%, #fae928 100%);
+	      background-color:#f2cd13;
+      }
+      .myButton:active {
+        position: relative;
+        top: 1px;
+      }
+
+      #pp {
+        /*position: absolute;
+        scale: 150%;
+        left: 35%;
+        bottom: 10%;
+        z-index: 9999; */
+
+        position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%) scale(2); /* Center horizontally and scale */
+            z-index: 9999;
+      }
+    </style>
+  </head>
+
+  <body class="text-center">
+    <!-- <h1>З Днем народження!!!</h1>
+    <br /> -->
+    <button class="myButton" id="start"></button>
+    <button style="display: none" id="startconsoledebug">
+      enable console logs
+    </button>
+    <button style="display: none" id="stopconsoledebug">
+      disable console logs
+    </button>
+    <br />
+    <br />
+
+    <div id="confettiContainer"></div>
+    <div id="cake-holder" style="opacity: 0">
+      <div class="cake" style="scale: 150%">
+        <div class="plate"></div>
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <div class="icing"></div>
+        <div class="drip drip1"></div>
+        <div class="drip drip2"></div>
+        <div class="drip drip3"></div>
+        <div class="candle" id="candle1" style="left: 75px">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" id="candle2" style="left: 110px; margin-top: 20px">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" id="candle3" style="left: 150px; margin-top: 20px">
+          <div class="flame"></div>
+        </div>
+        <div class="candle" id="candle4" style="left: 190px">
+          <div class="flame"></div>
+        </div>
+      </div>
+
+      <div class="cake-off">
+        <img src="pp.gif" style="opacity: 0" id="pp" />
+      </div>
+    </div>
+    <!--
+	<canvas id="meter" width="500" height="50"></canvas>
+-->
+
+<audio id="bdMusic" src="bday.mp3" loop></audio>
+<audio id="backgroundMusic" src="garden.mp3" loop></audio>
+
+    <script src="cake.js"></script>
+    <script src="volume-meter.js"></script>
+    <script src="audioDetectionConfig.js"></script>
+    <script src="audioDetection.js"></script>
+    <script src="audioStream.js"></script>
+    <script src="demoAudioRecorder.js"></script>
+    <script src="demoAudioDetectionListeners.js"></script>
+    <script src="demo.js"></script>
+
+  </body>
+</html>
